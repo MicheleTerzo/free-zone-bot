@@ -1,0 +1,21 @@
+{
+  "name": "free-zone-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "startApp": "npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.10.4",
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
