@@ -1,6 +1,5 @@
 //permission integer 19095693294832
 import {Client, GatewayIntentBits} from 'discord.js';
-import {token} from '../config.json';
 import ready from './listeners/ready';
 import interactionCreate from './listeners/interactionCreate';
 import buildUpdates from './listeners/buildUpdates';
@@ -10,4 +9,4 @@ const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits
 ready(client);
 interactionCreate(client);
 buildUpdates(client);
-client.login(token);
+client.login(process.env.TOKEN);
