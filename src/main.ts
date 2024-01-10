@@ -9,4 +9,6 @@ const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits
 ready(client);
 interactionCreate(client);
 buildUpdates(client);
-client.login(process.env.TOKEN);
+const token = process.env.TOKEN;
+console.log('Token: ', token)
+client.login(token);
